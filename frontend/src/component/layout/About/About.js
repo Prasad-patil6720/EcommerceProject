@@ -1,11 +1,12 @@
 import React from "react";
 import "./aboutSection.css";
 import { Button, Typography, Avatar } from "@material-ui/core";
-import YouTubeIcon from "@material-ui/icons/YouTube";
+import GitHubIcon from '@material-ui/icons/GitHub';
 import InstagramIcon from "@material-ui/icons/Instagram";
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 const About = () => {
   const visitInstagram = () => {
-    window.location = "https://instagram.com/meabhisingh";
+    window.location = "https://www.linkedin.com/in/prasad-patil-475150239/";
   };
   return (
     <div className="aboutSection">
@@ -18,29 +19,30 @@ const About = () => {
           <div>
             <Avatar
               style={{ width: "10vmax", height: "10vmax", margin: "2vmax 0" }}
-              src="https://res.cloudinary.com/tripleayt/image/upload/v1631555947/products/jpyibarlaxawvcvqjv5b.png"
+              src="https://res.cloudinary.com/tripleayt/image/upload/5947/products/jpyibarlaxawvcvqjv5b.png"
               alt="Founder"
             />
-            <Typography>Abhishek Singh</Typography>
+            <Typography>Prasad Patil</Typography>
             <Button onClick={visitInstagram} color="primary">
-              Visit Instagram
+              Visit LinkedIn
             </Button>
             <span>
-              This is a sample wesbite made by @meabhisingh. Only with the
-              purpose to teach MERN Stack on the channel 6 Pack Programmer
+              This is a sample wesbite made by Prasad Patil
             </span>
           </div>
           <div className="aboutSectionContainer2">
-            <Typography component="h2">Our Brands</Typography>
+            <Typography component="h2">visits</Typography>
             <a
-              href="https://www.youtube.com/channel/UCO7afj9AUo0zV69pqEYhcjw"
+              href="https://github.com/Prasad-patil6720"
               target="blank"
             >
-              <YouTubeIcon className="youtubeSvgIcon" />
+              <GitHubIcon className="youtubeSvgIcon" />
+              
+
             </a>
 
-            <a href="https://instagram.com/meabhisingh" target="blank">
-              <InstagramIcon className="instagramSvgIcon" />
+            <a href="https://www.linkedin.com/in/prasad-patil-475150239/" target="blank">
+              <LinkedInIcon className="instagramSvgIcon" />
             </a>
           </div>
         </div>
